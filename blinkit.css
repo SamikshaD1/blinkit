@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Libre+Baskerville&family=Poppins&family=Roboto&display=swap');
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Okra', Helvetica;
+}
+.container{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    height: 86px;
+    z-index: 1000;
+    background-color: white;
+    justify-content: center;
+    
+}
+.logo svg{
+    width: 80%;
+    height: 20px;
+}
+.logo{
+    padding: 0 20px;
+    cursor: pointer;
+}
+.location{
+    padding: 20px;
+}
+.location .location-title{
+    font-weight: 800;
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-family: 'Okra', Helvetica;
+    cursor: pointer;
+}
+.location .location-place{
+    font-size: 12px;
+    width: auto;
+    cursor: pointer;
+    font-weight: 100;
+}
+.location .location-place i{
+    transform: translateY(-3px);
+}
+.search-bar{
+    width: 50%;
+    padding: 0px 12px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 12px;
+    background: rgb(248, 248, 248);
+    color: rgb(130, 130, 130);
+    box-shadow: none;
+
+    
+}
+.search-bar input{
+    overflow: hidden;
+    position: relative;
+    border: none;
+    width: 100%;
+}
+.search-bar .fa-magnifying-glass{
+    color: #1f1f1f;
+}
+.login{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(54, 54, 54);
+    padding: 40px;
+    cursor: pointer;
+}
+.location .logo .search-bar .login .cart{
+    margin: 0 25px;
+}
+.cart button{
+     font-size: 12px;
+    padding: 18px;
+    background-color: rgb(12, 131, 31);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 800;
+    height: 52px;
+    width: 112px;
+    cursor: pointer;
+}
+  /* main-section  */
+
+  .main-container{
+    max-width: 1200px;
+   
+  }
+  .wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 68px;
+    justify-content: center;
+    
+  }
+  .banner img{
+    width: 100%;
+    border-radius: 0px;
+    object-fit: fill;
+    cursor: default;
+  }
+  .banner-2 .banner-img img{
+       height: 200px;
+       width: 300px;
+  }
+  .banner-2{
+    display: flex;
+    column-gap: 20px;
+    overflow:auto;
+  }
+  /* ::-webkit-scrollbar{
+    display: none;
+  } */
+ /* section-3  */
+.catagories{
+    display: grid;
+    grid-template-columns: repeat(10,10%);
+    
+  }
+  .catagory img{
+    width: 100%;
+  }
+ 
+  
+  
+  /* section-4  */
+  .items{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 20px;
+    overflow: auto;
+  }
+  .items .title{
+    display: flex;
+    justify-content: space-between;
+  }
+  .title .catagory-name{
+    font-size: 24px;
+   font-weight: 600;
+  line-height: 32px;
+  }
+  .title a{
+    text-decoration: none;
+    color: green;
+  }
+  .list-item{
+    display: flex;
+    column-gap: 20px;
+    
+    overflow: auto;
+  }
+  .item .item-img img{
+    width: 100%;
+  }
+  .list-item .items{
+    width: 15%;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.04) 2px 2px 8px;
+    border: 0.5px solid rgb(232, 232, 232);
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .item-details .timer{
+    font-weight: 700;
+    font-size: 9px;
+  }
+  .item-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+  }
+  .item-details .item-name{
+    overflow: hidden;
+    color: rgb(31, 31, 31);
+    font-weight: 700;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 16px;
+    min-width: 100%;
+    height: 30px;
+    margin-bottom: 6px;
+  }
+  .item-details .item-weight{
+    height: 13px;
+    color: #666;
+    font-size: 12px;
+   }
+   .item-price .price .fa-indian-rupee-sign{
+    font-weight: 600;
+    font-size: 12px;
+   }
+   .item-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .item-price button{
+      cursor: pointer;
+    width: 66px;
+    border: 1px solid rgb(49, 134, 22);
+    height: 31px;
+    color: rgb(49, 134, 22);
+    font-weight: 600;
+    font-size: 13px;
+    background-color: rgb(247, 255, 249);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 8px;
+    }
+
+    /* footer  */
+    .heart .fa-heart{
+     
+    }
+    footer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 150px;
+      margin-top: 100px;
+      height: 20px;
+      background-color: rgb(228, 221, 221);
+      }
+    .heart .fa-heart{
+      color: red;
+      font-size: 20px;
+    }
+    .heart{
+      font-weight:600;
+    }
+    
+    .catagories .fa-chevron-right{
+      box-sizing: border-box;
+      font-size: 0px;
+      height: 34px;
+      width: 34px;
+      background: rgb(238, 232, 232);
+      position: absolute;
+      z-index: 2;
+      top: auto;
+      left: unset;
+      right: 100px;
+      display: flex;
+    border: 4px solid transparent;
+    align-self: center;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: scroll;
+    }
+   
